@@ -6,15 +6,22 @@ app.config([
 function($stateProvider, $urlRouterProvider) {
 
     $stateProvider
-    .state('TestWall', {
-        url: '/testWall',
-        templateUrl: 'temps/testWall.html',
-        resolve: {
-                itemPromise: ['Main', function(Main){
-                        return Main.getAll();
-                }]
-            }
+    .state('emergent', {
+        url: '/emergent',
+        templateUrl: 'temps/emergent.html',
     });
 
-	$urlRouterProvider.otherwise('TestWall');
+
+
+    // .state('TestWall', {
+    //     url: '/testWall',
+    //     templateUrl: 'temps/testWall.html',
+    //     resolve: {
+    //             itemPromise: ['Main', function(Main){
+    //                     return Main.getAll();
+    //             }]
+    //         }
+    // });
+
+	$urlRouterProvider.otherwise('emergent');
 }]);

@@ -1,10 +1,6 @@
-var app = angular.module('theBlock',
+var app = angular.module('emergent',
 	[
-		'MainCtrl',
-		'InnerCtrl',
-		'mainService',
 		'ui.router',
-
 		'theBlockRouting'
 
 	]
